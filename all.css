@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+        
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+        display: block;
+        }
+        body {
+        line-height: 1.5;
+        }
+        blockquote, q {
+        quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+        content: '';
+        content: none;
+        }
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        }
+        * {
+            box-sizing: border-box;
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+        h1, h2, h3, h4, h5, h6{
+            line-height: 1.2;
+        }
+        /* #2a8356 */
+        
+        .d-flex{
+            display: flex;
+        }
+        .userPhoto img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .backendPage{
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .aside{
+            width: 296px;
+            padding: 32px 0 32px 32px;
+            background-color: #edf4ed;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .aside .logo{
+            margin-bottom: 27px;
+        }
+        .aside a{
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            color: #000;
+            padding: 15px 0;
+            position: relative;
+        }
+        .aside a:before{
+            content: "";
+            position: absolute;
+            border-right: 3px solid #2a8356 ;
+            left: -32px;
+            top: 10%;
+            height: 80%;
+            opacity: 0;
+            transition: .3s;
+        }
+        .aside a:hover{
+            color: #2a8356;
+        }
+        .aside a:hover:before{
+            opacity: 1;
+        }
+        .aside .navBar img{
+            width: 24px;
+            margin-right: 16px;
+        }
+        .aside .asideBottom img{
+            margin-right: 16px;
+        }
+        .aside .asideBottom h2{
+            font-size: 16px;
+        }
+        .aside .asideBottom p{
+            font-size: 14px;
+            color: #0000009A;
+        }
+
+
+        .assignment{
+            width: 984px;
+            padding: 32px 32px 0 32px;
+        }
+        .assignment .header{
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 44px;
+        }
+        .assignment .header h2{
+            font-size: 24px;
+            margin-right: 46px;
+        }
+        .assignment .header h3{
+            font-size: 16px;
+        }
+        .assignment .header .courses{
+            align-items: center;
+        }
+        .assignment .header .notifications{
+            margin-left: 26px;
+        }
+
+        .assignmentContent .assignmentList{
+            width: 320px;
+            margin-right: 16px;
+        }
+        .assignmentContent .listMenu{
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .assignmentContent .assignmentList li{
+            padding: 12px;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #CDDDCD;
+        }
+        .assignmentContent .assignmentList li:first-child{
+            background-color: #edf4ed;
+        }
+        .assignmentContent .assignmentList .b-bottom,
+        .assignmentContent .listContent .b-bottom{
+            border-bottom: none;
+        }
+        .assignmentContent .assignmentList .listSubTitle{
+            text-align: right;
+        }
+        .assignmentContent .assignmentList li h4{
+            font-size: 12px;
+            color: #0000009A;
+        }
+        .assignmentContent .assignmentList li h3{
+            font-size: 16px;
+        }
+        
+        .assignmentContent .listContent{
+            width: 584px;
+        }
+        .assignmentContent .listContent > h4{
+            font-size: 12px;
+            text-align: right;
+            padding: 8px 0;
+        }
+        .assignmentContent .listContent h4{
+            font-size: 12px;
+            color: #0000009A;
+        }
+        .assignmentContent .listContent li{
+            border: 1px solid #CDDDCD;
+            padding: 16px;
+        }
+        .assignmentContent .listContent li:first-child{
+            padding: 12px 16px;
+            justify-content: space-between;
+            background-color: #edf4ed;
+        }
+        
+        .assignmentContent .listContent li:last-child{
+            border-top: none;
+        }
+        .assignmentContent .mailContent{
+            width: 488px;
+        }
+        .assignmentContent .mailContent p{
+            padding: 16px 0;
+            font-size: 14px;
+        }
+        .assignmentContent .mailContent strong{
+            background-color: #edf4ed;
+            color: #2A8356;
+        }
+        .assignmentContent .userPhoto{
+            margin-right: 8px;
+        }
+        .assignmentContent .fileZip{
+            width: 176px;
+            align-items: center;
+            padding: 8px 12px;
+            border: 1px solid #CDDDCD;
+            background-color: #edf4ed;
+        }
+        .assignmentContent .editBar{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .assignmentContent .editIcon img{
+            margin-left: 24px;
+        }
+        .assignmentContent .divider{
+            position: relative;
+        }
+        .assignmentContent .divider:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #CDDDCD;
+            bottom: -16px;
+            left: 0;
+        }
+
+        .footer{
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .footer .listChange{
+            width: 584px;
+            padding: 16px 0;
+            justify-content: space-between;
+        }
+        .footer .leftIcon{
+            margin-right: 24px;
+        }
+        .footer .reply button{
+            padding: 8px 32px;
+            color: #2A8356;
+            border: 1px solid #2A8356;
+            background-color: #fff;
+            margin-left: 16px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .footer .reply button:hover{
+            color: #fff;
+            background-color: #2A8356;
+        }
+
+        
